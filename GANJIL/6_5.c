@@ -36,5 +36,6 @@ for(i=0 ; i<=1 ; i++){
             printf("    %.1f", matriks[i][j]);
         }
         printf("\n\n");
-    }             
-}
+    }    
+    return 0;         
+} 
