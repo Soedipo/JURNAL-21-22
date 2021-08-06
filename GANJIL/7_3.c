@@ -4,7 +4,7 @@
 int main()
 {
     int index[100];
-    int i, j, n, tahu;
+    int i, j, n, nasi;
 
     printf("Bubble Sort Descending\n");
     printf("Banyak data : ");
@@ -21,9 +21,9 @@ int main()
         {
             if (index[j - 1] < index[j]) //(B). Lengkapi syntax (variable)
             {
-                tahu = index[j - 1]; //(C). Lengkapi oeparsi
+                nasi = index[j - 1]; //(C). Lengkapi oeparsi
                 index[j - 1] = index[j];
-                index[j] = tahu;
+                index[j] = nasi;
             }
         }
     }
