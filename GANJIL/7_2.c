@@ -21,14 +21,14 @@ int main (){
 
     for (i=0;i<=n-2;i++)
     {
-    max = i; //lengkapi syntax (insialisasi pertama nilai ekstrim) 
+    max = i; //insialisasi nilai ekstrim
         for (j=i;j<=n-1;j++){
-            if (das[j]>das[max]) //lengkapi syntax (operasi boolean) 
+            if (das[j]>das[max]) //lengkapi syarat descending
                 max = j;
         }
             baju = das[max];
             das[max] =das[i];
-            das[i] = baju	; //lengkapi syntax
+            das[i] = baju	; //lengkapi operasi
     }
 
     printf("\nSetelah : ");
