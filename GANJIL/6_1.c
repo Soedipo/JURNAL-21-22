@@ -10,7 +10,7 @@ int main(){
 	printf("Jumlah Mahasiswa : "); 
 	scanf("%d",&n); 
 	getchar();
-	for(i=0 ; i<n ; i++){ //Tentukan operasi boolean yang ada pada kondisi 
+	for(i=0 ; i<n ; i++){ //Tentukan operasi boolean
 		printf("%d. ",i+1); 
 		gets(nama[i]);//Lengkapi variabel indeksnya
 		}
