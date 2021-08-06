@@ -1,53 +1,33 @@
-//Program pengaplikasian array dua dimensi dalam matriks 
-#include<stdio.h>
+//Program Determinan Matriks 3x3
+#include <stdio.h>
+#include <stdlib.h>
 int main(){
-	int matriksA[50][50],matriksB[50][50],matriksC[50][50],i,j,n,m; 
-	printf("Input jumlah baris : "); scanf("%d",&n);
-	printf("Input jumlah kolom : "); scanf("%d",&m); 
-	printf("\tMATRIKS A\n");
-//INPUT
-	for(i=0;i<n;i++){
-		for(j=0;j<m;j++){
-			printf("Input baris %d kolom %d : ",i+1,j+1); 
-			scanf("%d",&matriksA[i][j]); //Tentukan variabel untuk indeksnya
-		}
-	}printf("\n"); 
-	//OUTPUT
-	for(i=0;i<n;i++){
-		for(j=0;j<m;j++){
-			printf(" %d\t", 	matriksA[i][j]);//Lengkapi variabelnya
-		}
-		printf("\n"); //Sintaks untuk pindah ke baris baru
-	}
-	printf("\tMATRIKS B\n"); printf("\n");
-//INPUT
-	for(i=0;i<n;i++){
-		for(j=0;j<m;j++){
-		printf("Input baris %d kolom %d : ",i+1,j+1); scanf("%d",&matriksB[i][j]);
-		}
-	} printf("\n");
-//OUTPUT
-	for(i=0;i<n;i++){
-		for(j=0;j<m;j++){
-		printf(" %d\t", matriksB[i][j]);
-	}
-	printf("\n");
-	}
-	 
-//Proses Pengurangan
-	printf("\tPENGURANGAN MATRIKS A DAN MATRIKS B\n");
-	for(i=0;i<n;i++){
-		for(j=0;j<m;j++){
-			matriksC[i][j] = matriksA[i][j]	- matriksB[i][j]; //Lengkapi variabelnya untuk mengurangi matriks A dan matriks B
-		}
-	}
-//OUTPUT
-	for(i=0;i<n;i++){
-		printf("\t\t\t"); 
-			for(j=0;j<m;j++){
-				printf("%d\t",matriksC[i][j]);
-			}
-		printf("\n");
-	}
-}
+    int i, j, Det, matriks[3][3]; //Lengkapi indeks array
 
+//INPUT
+    printf("Masukkan angka: \n");
+    for(i=0 ; i<=2 ; i++){
+        for(j=0 ; j<=2 ; j++){
+            printf("A[%d][%d] = ", i+1, j+1);
+            scanf("%d", &matriks[i][j]); //Tentukan variabel
+        }
+    }
+   printf("\n\n");
+
+//OUTPUT MATRIKS 3x3 
+    printf("\n---MATRIKS A---\n\n");
+
+    for(i=0 ; i<=2 ; i++){
+        for(j=0 ; j<=2 ; j++){ //Tentukan operasi
+            printf("    %d", matriks[i][j]);
+        }
+        printf("\n\n");
+    } 
+
+//PROSES HITUNG DETERMINAN
+   Det = matriks[0][0]*matriks[1][1]*matriks[2][2]+matriks[0][1]*matriks[1][2]*matriks[2][0]+matriks[0][2]*matriks[1][0]*matriks[2][1];
+   Det = Det - (matriks[0][2]*matriks[1][1]*matriks[2][0]+matriks[0][1]*matriks[1][0]*matriks[2][2]+matriks[0][0]*matriks[1][2]*matriks[2][1]);
+//OUTPUT Adj(M)
+	printf("\n\nDet(A) = %d", Det); //Lengkapi variabel
+    return 0;         
+} 
