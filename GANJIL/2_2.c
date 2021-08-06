@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 main(){
 	int jumlah;
 	char nama[20], Barang[40], toko[20], review; //Tentukan variabe

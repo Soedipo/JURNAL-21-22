@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define phi 3.14
+
 int main(){
 	struct{
 		int diameter;

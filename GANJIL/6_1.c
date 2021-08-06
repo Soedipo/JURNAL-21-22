@@ -1,6 +1,7 @@
 //Program pendataan mahasiswa
 #include<stdio.h> 
 #include<string.h>
+
 int main(){
 	int i,n;
 	char nama[50][50];

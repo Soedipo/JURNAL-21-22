@@ -1,5 +1,6 @@
 //Program menghitung jumlah deret kelipatan 3 ke-n baris
 #include<stdio.h> 
+
 int main(){
 	int p,e,n,a;
 	

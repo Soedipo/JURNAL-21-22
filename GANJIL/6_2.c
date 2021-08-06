@@ -1,5 +1,6 @@
 //Program pembelian buku menggunakan array of struct 
 #include<stdio.h>
+
 int main(){
 	struct{
 		char nama[50], alamat[50]; 

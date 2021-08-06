@@ -1,5 +1,6 @@
 //Program aritmatika bilangan bulat 
 #include<stdio.h>
+
 int main(){
 int angka1, angka2, angka3, hasil; 
 printf("Masukan angka pertama : ");

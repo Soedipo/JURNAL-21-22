@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(){
 	struct{
 			int p, l ,t, v;

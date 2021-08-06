@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(){
     int i, j, temp, matriks[2][2];
 
@@ -31,7 +32,7 @@ int main(){
 
 //OUTPUT Adj(M)
     printf("---Adj(A)---\n\n");
-for(i=0 ; i<=1 ; i++){
+    for(i=0 ; i<=1 ; i++){
         for(j=0 ; j<=1 ; j++){
             printf("    %d", matriks[i][j]);
         }

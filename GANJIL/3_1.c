@@ -1,5 +1,6 @@
 //Program Menentukan Indeks Nilai
 #include <stdio.h>
+
 int main(){
 	int nilai;
 	printf ("Nilai = ");
