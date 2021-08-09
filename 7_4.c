@@ -8,12 +8,12 @@ int main()
 
     printf("Text = ");
     gets(text);
-    n = strlen(text);
+    n = strlen(text) - 1;
 
-    for (i = 0; i <= n - 1; i++)
+    for (i = 0; i <= n; i++)
     {
         alphabet = text[i];
-        for (j = i + 1; j <= n - 1; j++)
+        for (j = i + 1; j <= n; j++)
         {
             if (alphabet > text[j])
             {
