@@ -7,10 +7,10 @@ int main()
     printf("Huruf yang dicari : ");
     scanf("%c", &cari);
     while (i < 10 && a[i] != cari) //Lengkapi (A). operasi boolean dan (B). variabelnya
-    { 
+    {
         i++;
     }
-    if (a[i] ==  cari) //(C). Lengkapi operasi boolean-nya
+    if (a[i] == cari) //(C). Lengkapi operasi boolean-nya
     {
         printf("Data ditemukan di indeks ke-%d", i);
     }
