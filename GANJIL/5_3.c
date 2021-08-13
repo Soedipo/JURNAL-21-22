@@ -25,7 +25,7 @@ int main()
 	printf("UFO A = "); scanf("%d", &tA); 
 	printf("UFO B = "); scanf("%d", &tB);
 	printf("\n");
-	banding(); //(C). Tentukan fungsi
+	banding(); //(C). Tentukan pemanggilan fungsi
 	
 	return 0;
 }

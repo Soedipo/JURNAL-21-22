@@ -12,7 +12,7 @@ int main()
 		if(strcmp(jawab, "Jakarta")==0 || strcmp(jawab, "jakarta")==0){ //(B). Tentukan operator boolean
 			printf("Anda benar\n");
 			break;
-		} else{ //(C). Tentukan sintaks
+		} else{ 
 			printf("Jawaban anda salah\n");
 			if(i>0){
 				printf("Kesempatan untuk menjawab %d kali lagi\n",i);
