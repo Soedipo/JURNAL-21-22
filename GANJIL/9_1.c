@@ -17,8 +17,14 @@ int main()
 
 int perkalian(int n)
 {
-    if (n==0) return 0;
-    else if(n > 0){ //Lengkapi basisnya
-        return a + perkalian(n-1); //Tentukan rekursinya
+    if (n == 0)
+        return 0;
+    else if (n > 0)
+    { //Lengkapi basisnya
+        return a + perkalian(n - 1);
+    } //Tentukan rekursinya
+    else if (n < 0)
+    { //Lengkapi basisnya
+        return -a + perkalian(n + 1);
     }
 }
