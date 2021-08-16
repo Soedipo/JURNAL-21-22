@@ -1,28 +1,22 @@
-//Program writing biner untuk pendataan buku
+//Program reading biner untuk pendataan buku
 #include <stdio.h>
 struct
 {
-    char name[50], bentuk[50];
-    int harga;
-} a;
-int i, n;
+    char who[50], shape[50];
+    int bayar;
+} b;
+int a, n;
 void main()
 {
-    FILE *pesanan;
-    pesanan = fopen("List Pesanan.dat", "wb"); //(A). Tentukan modenya
-    printf("Banyak buku : ");
-    scanf("%d", &n);
-    getchar();
-    for (i = 1; i <= n; i++)
+    int a = 1;
+    FILE *list; //(A). Lengkapi strukturnya
+    list = fopen("List Pesanan.dat", "rb"); //(B). Tentukan mode nya
+    while (fread(&b, sizeof(b), 1, list) == 1) // Tentukan (C). sintaks dan (D). lengkapi
     {
-        printf("%d.\tNama Pemesan\t: ", i);
-        gets(a.name);
-        printf("\tBentuk bolu\t: ");
-        gets(a.bentuk);
-        printf("\tHarga\t\t: ");
-        scanf("%d", &a.harga);
-        getchar();
-        fwrite(&a, sizeof(a), 1, pesanan); //(B). Tentukan sintaksnya
+        printf("%d.\tNama Pemesan\t: %s\n", a, b.who);
+        printf("\tBentuk bolu\t: %s\n", b.shape);
+        printf("\tHarga\t\t: %d\n\n", b.bayar);
+        a++;
     }
-    fclose(pesanan); //(C). Lengkapi sintaksnya
+    fclose(list); 
 }

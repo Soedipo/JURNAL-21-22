@@ -1,12 +1,30 @@
-// Program Appending untuk file teks
+//Program writing biner untuk pendataan buku
 #include <stdio.h>
-char string[255];
-int main()
+struct
 {
-    FILE *hola; //(A). Tentukan pointernya 
-    hola = fopen("DASKOMLAB.txt", "a"); //Tentukan (B). sintaks untuk membuka file dan (C). modenya
-    gets(string);
-    fprintf(hola, "%s\n", string); //(D). Tentukan sintaks untuk proses input
-    fclose(hola); //(E). Tentukan sintaks untuk langkah terakhir file sekuensial
-    return 0;
+    char name[50], bentuk[50];
+    int harga;
+} a;
+
+int i, n;
+void main()
+{
+    FILE *pesanan;
+    pesanan = fopen("List Pesanan.dat", "wb"); //(A). Tentukan modenya
+    printf("Banyak buku : ");
+    scanf("%d", &n);
+    getchar();
+    for (i = 1; i <= n; i++)
+    {
+        printf("%d.\tNama Pemesan\t: ", i);
+        gets(a.name);
+        printf("\tBentuk bolu\t: ");
+        gets(a.bentuk);
+        printf("\tHarga\t\t: ");
+        scanf("%d", &a.harga);
+        getchar();
+        fwrite(&a, sizeof(a), 1, pesanan); //(B). Tentukan sintaksnya
+    }
+    
+    fclose(pesanan); //(C). Lengkapi sintaksnya
 }
