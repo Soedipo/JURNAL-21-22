@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 void kotak(int n);
 
 int max;
@@ -11,7 +12,6 @@ int main()
     scanf("%d", &n);
     max = n;
     kotak(n);
-    getch();
     return 0;
 }
 
@@ -26,6 +26,8 @@ void kotak(int a)
     {
         printf("#        #\n");
     }
-
+    else if (a == 0){
+        getch();
+    }
     kotak(a - 1);
 }
