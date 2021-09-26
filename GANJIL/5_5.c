@@ -30,7 +30,7 @@ int main(){
 			printf("Rp%d", harga);
 			break;
 		}
-	} getchar();
+	} getch();
 }
 
 int Circle(){

@@ -51,7 +51,7 @@ int main()
         printf("Pilihan tidak tersedia");
         break;
     }
-    getchar();
+    getch();
 }
 
 void NameSearch(char t[30], int n)

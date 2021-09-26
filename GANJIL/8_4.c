@@ -20,6 +20,6 @@ int main(){
     }
 
     printf("\nHuruf '%c' ada %d buah", letter, count);
-    getchar();
+    getch();
     return 0;
 }

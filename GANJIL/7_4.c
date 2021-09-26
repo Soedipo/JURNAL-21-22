@@ -27,5 +27,5 @@ int main()
         if (alphabet != ' ')
             printf("%c ", alphabet);
     }
-    getchar();
+    getch();
 }

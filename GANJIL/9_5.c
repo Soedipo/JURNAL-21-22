@@ -11,7 +11,7 @@ int main()
     scanf("%d", &n);
     max = n;
     kotak(n);
-    getchar();
+    getch();
     return 0;
 }
 

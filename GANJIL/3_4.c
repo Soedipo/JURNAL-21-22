@@ -23,5 +23,6 @@ int main(){
 	printf("Volume Akuarium B: %d\n", B.v);
 	if(A.v == B.v) printf("Rayhan bisa membeli diantara keduanya.");
 	else printf("Rayhan akan membeli akuarium %c", beli);
-	getchar();
+	getch();
+	return 0;
 }

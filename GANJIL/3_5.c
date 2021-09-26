@@ -21,5 +21,5 @@ int main(){
 			printf("Faernheit = %.2f F", farenheit);
 			break;
 		}
-	} getchar();
+	} getch();
 }

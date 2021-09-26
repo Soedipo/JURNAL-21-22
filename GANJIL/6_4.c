@@ -33,6 +33,6 @@ int main(){
         printf("   Harga\t: %d\n\n", kasir[itemArr].harga);
     }
     printf("TOTAL HARGA\t: Rp%d", total); 
-    getchar();
+    getch();
     return 0;
 }

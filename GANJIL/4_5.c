@@ -20,5 +20,5 @@ int main(){
 			else printf("%d ", i);
 		}		
 	} else printf("Gagal");
-	getchar();
+	getch();
 }

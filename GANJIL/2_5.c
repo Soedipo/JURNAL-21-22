@@ -23,5 +23,5 @@ int main(){
 	printf("Nomor Telepon\t= %s\n", form.TelNumber);
 	printf("Diameter Bolu\t= %d cm\n", form.diameter);
 	printf("Luas Bolu\t= %.2f cm^2", form.area);
-	getchar();
+	getch();
 }
