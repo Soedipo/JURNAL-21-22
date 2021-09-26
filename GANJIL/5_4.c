@@ -20,4 +20,5 @@ void Faktorial(int a){
 	}
 //OUTPUT
 	printf("%d", hasil);
+	getchar();
 }

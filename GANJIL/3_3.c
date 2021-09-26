@@ -28,5 +28,6 @@ int main()
 		default : //Tentukan syntax case default
 			printf("\nVidcon ngak ada :(");
 	}
+	getchar();
 	return 0;
 }

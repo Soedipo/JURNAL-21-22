@@ -11,4 +11,5 @@ int main(){
 	harga = luas*200;
 //Output	
 	printf("Harga= Rp%d", harga);
+	getchar();
 }

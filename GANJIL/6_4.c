@@ -32,6 +32,7 @@ int main(){
         printf("%d. Nama Barang\t: %s\n", itemArr+1, kasir[itemArr].item);
         printf("   Harga\t: %d\n\n", kasir[itemArr].harga);
     }
-    printf("TOTAL HARGA\t: Rp%d", total);
+    printf("TOTAL HARGA\t: Rp%d", total); 
+    getchar();
     return 0;
 }

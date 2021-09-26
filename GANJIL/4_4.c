@@ -10,5 +10,5 @@ int main()
 		b=j+a;
 		j=a;
 		a=b;
-	}
+	}getchar();
 }

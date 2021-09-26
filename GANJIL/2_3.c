@@ -23,7 +23,7 @@ int main()
 	printf("\nJurusan : %s ", data.jurusan); 
 	printf("\nAlamat : %s ", data.alamat); 
 	printf("\nUkuran Jaket : %s ", data.Jaket);
-	
+	getchar();
 	return 0;
 }
  

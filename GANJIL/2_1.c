@@ -13,5 +13,6 @@ hasil = (angka1+angka2)/angka3; //Tentukan variabel hasil dari penjumlahan
 
 //Output 
 printf("\n(%d + %d)/%d = %d \n",angka1, angka2, angka3, hasil);
+getchar();
 }
 

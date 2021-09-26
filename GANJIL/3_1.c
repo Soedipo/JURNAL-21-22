@@ -15,5 +15,6 @@ int main(){
 		printf("A");
 	}
 	else printf("Nilai salah input"); //(C). Lengkapi sintaks
+	getchar();
 	return 0;
 }

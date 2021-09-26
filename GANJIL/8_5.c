@@ -51,6 +51,7 @@ int main()
         printf("Pilihan tidak tersedia");
         break;
     }
+    getchar();
 }
 
 void NameSearch(char t[30], int n)
@@ -82,5 +83,5 @@ void ShapeSearch(char t[30], int n)
         }
     }
     if (found == 0)
-        printf("\nData tidak ditemukan");    
+        printf("\nData tidak ditemukan");
 }

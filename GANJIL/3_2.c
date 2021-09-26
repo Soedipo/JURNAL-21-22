@@ -18,6 +18,7 @@ int main(){
 		printf("\nUsername atau password salah!\n"); 
 		printf("Silahkan Ulang");
 	}
+	getchar();
 	return 0;
 }
 

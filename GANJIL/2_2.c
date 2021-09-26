@@ -19,4 +19,5 @@ int main(){
 	printf("Nama Toko\t\t\t: %s\n", toko); //Tentukan variabelnya 
 	printf("Nama Barang\t\t\t: %s\n", 	Barang);
 	printf("Skor Pelayanan Toko (Skala A-E)\t: %c", review); //Tentukan formatnya
+	getchar();
 }

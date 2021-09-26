@@ -38,4 +38,5 @@ printf("\nData: \n");
         printf("\tHarga\t: %d \n", a[i].harga);
         printf("\n");
     }
+    getchar();
 }

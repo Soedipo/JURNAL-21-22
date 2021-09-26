@@ -17,4 +17,5 @@ int main(){
 	}
 	
 	printf ("\n\nMax = %d", Max);
+	getchar();
 }
