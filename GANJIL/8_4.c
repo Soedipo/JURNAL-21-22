@@ -20,4 +20,5 @@ int main(){
     }
 
     printf("\nHuruf '%c' ada %d buah", letter, count);
+    return 0;
 }
