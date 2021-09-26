@@ -1,42 +1,41 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<string.h>
 
-int main(){
-    int i, j, temp, matriks[2][2];
+struct data
+{
+char nama[50], bolu[20], jur[20], TEMP[99], TEMP2[99];
+int harga;
+}a[100], temp; int i, j, n;
 
-//INPUT
-    printf("Masukkan angka: \n");
-    for(i=0 ; i<=1 ; i++){
-        for(j=0 ; j<=1 ; j++){
-            printf("A[%d][%d] = ", i+1, j+1);
-            scanf("%d", &matriks[i][j]);
-        }
+int main()
+{
+printf("Jumlah Data : ");
+scanf("%d",&n);
+ for (i=0;i<=n-1;i++)
+ {
+ getchar();
+ printf("%d.\tNama : ", i+1);   gets(a[i].nama);
+ printf("\tBolu :");   gets (a[i].bolu);
+ printf ("\tHarga :"); scanf("%d", &a[i].harga);
+ }
+ 
+    for (i=0;i<n-1;i++){
+        for (j=0;j<=n-1-j;j++)
+  		{
+        	if (strcmp(a[j].nama, a[j+1].nama) > 0){
+                temp=a[j];
+    			a[j]=a[j+1];
+    			a[j+1]=temp;
+            }
+  		}
     }
-    system("cls");
-
-//OUTPUT MATRIKS 2x2 
-    printf("\n---MATRIKS A---\n\n");
-
-    for(i=0 ; i<=1 ; i++){
-        for(j=0 ; j<=1 ; j++){
-            printf("    %d", matriks[i][j]);
-        }
-        printf("\n\n");
-    } 
-
-//Adj(M)
-    temp = matriks[0][0];
-    matriks[0][0] = matriks[1][1];
-    matriks[1][1] = temp;
-    matriks[0][1] = - matriks[0][1]; matriks[1][0] = -matriks[1][0];  
-
-//OUTPUT Adj(M)
-    printf("---Adj(A)---\n\n");
-    for(i=0 ; i<=1 ; i++){
-        for(j=0 ; j<=1 ; j++){
-            printf("    %d", matriks[i][j]);
-        }
-        printf("\n\n");
-    }    
-    return 0;         
-} 
+    
+printf("\nData: \n");
+   for(i=0;i<=n-1;i++)
+    {
+        printf("%d.\tNama\t: %s \n", i+1, a[i].nama);
+        printf("\tBolu\t: %s \n", a[i].bolu);
+        printf("\tHarga\t: %d \n", a[i].harga);
+        printf("\n");
+    }
+}

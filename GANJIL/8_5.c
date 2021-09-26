@@ -82,7 +82,5 @@ void ShapeSearch(char t[30], int n)
         }
     }
     if (found == 0)
-        printf("\nData tidak ditemukan");
-
-    return 0;        
+        printf("\nData tidak ditemukan");    
 }
