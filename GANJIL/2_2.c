@@ -20,6 +20,6 @@ int main(){
 	printf("\nOUTPUT\n");
 	printf("Nama Barang\t: %s	\n", Barang); //Tentukan formatnya 
 	printf("Total harga\t: Rp%f\n", totalharga);//Tentukan formatnya
-	getchar();
+	getch();
 	return 0;
 }
