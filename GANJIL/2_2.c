@@ -1,23 +1,25 @@
 #include<stdio.h>
 
 int main(){
+	char Barang[40]; //Tentukan variabel
+	float harga, totalharga;
 	int jumlah;
-	char nama[20], Barang[40], toko[20], review; //Tentukan variabe
+
 //Input
-	printf("Nama Pembeli\t\t\t: ");
-	gets(nama); //Tentukan variabelnya 
-	printf("Nama Toko\t\t\t: ");
-	gets(toko);
-	printf("Nama Barang\t\t\t: ");
-	gets(Barang); //Lengkapi sintaksnya
-	printf("Skor Pelayanan Toko (Skala A-E)\t: ");
-	scanf("%c", &review);
-	
+	printf("Nama Barang\t: ");
+	gets(Barang); //Tentukan sintaks
+	printf("Harga\t\t: Rp");
+	scanf("%f", &harga);
+	printf("Jumlah barang\t: ");
+	scanf("%d", &jumlah); //Tentukan format
+
+//Operasi Hitung
+	totalharga = harga*jumlah;
+
 //Output
 	printf("\nOUTPUT\n");
-	printf("Nama Pembeli\t\t\t: %s	\n", nama); //Tentukan formatnya 
-	printf("Nama Toko\t\t\t: %s\n", toko); //Tentukan variabelnya 
-	printf("Nama Barang\t\t\t: %s\n", 	Barang);
-	printf("Skor Pelayanan Toko (Skala A-E)\t: %c", review); //Tentukan formatnya
+	printf("Nama Barang\t: %s	\n", Barang); //Tentukan formatnya 
+	printf("Total harga\t: Rp%f\n", totalharga);//Tentukan formatnya
+	return 0;
 	getchar();
 }
